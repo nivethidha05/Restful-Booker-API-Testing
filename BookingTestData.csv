@@ -1,0 +1,4 @@
+firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
+Nivethidha,Kumar,1500,true,2026-12-01,2026-12-05,Breakfast
+Priya,Sharma,2000,false,2026-12-10,2026-12-15,Lunch
+Arun,Kumar,2500,true,2026-12-20,2026-12-25,Dinner
