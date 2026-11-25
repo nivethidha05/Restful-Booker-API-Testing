@@ -81,3 +81,17 @@ Designed and executed negative test scenarios to evaluate API input validation a
 - 30 JavaScript assertions passed.
 - Identified potential API validation weaknesses involving missing fields, invalid data types, empty values and booking dates.
 - Used Postman Post-response scripts to validate actual API responses.
+
+- **Newman CLI Execution Results – Negative API Testing**
+
+- Executed 8 negative API test requests using Newman CLI.
+- Total assertions: 30
+- Passed assertions: 30
+- Failed assertions: 0
+- Failed requests: 0
+- Execution time: 3.7 seconds
+
+**Command used:**
+```bash
+newman run "E-Commerce API Testing.postman_collection.json" --folder "Negative_API_Testing" --env-var "baseUrl=https://restful-booker.herokuapp.com"
+```
