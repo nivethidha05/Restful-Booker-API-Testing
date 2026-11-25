@@ -58,3 +58,26 @@ Used `pm.iterationData.get()` to read test data dynamically and validate API res
 
 ## Author
 QA Automation Tester | API Testing | Postman | JavaScript | Newman
+
+### Negative API Testing
+
+Designed and executed negative test scenarios to evaluate API input validation and error handling.
+
+**Test scenarios covered:**
+
+| Test Case | Scenario | Actual API Behavior |
+|---|---|---|
+| TC_009 | Missing First Name | 500 Internal Server Error |
+| TC_010 | Missing Last Name | 500 Internal Server Error |
+| TC_011 | Invalid Total Price (String) | 200 OK; value converted to null |
+| TC_012 | Invalid DepositPaid (String) | 200 OK; value converted to true |
+| TC_013 | Invalid Check-in Date Format | 200 OK; invalid date returned |
+| TC_014 | Checkout Date Earlier Than Check-in | 200 OK; invalid date range accepted |
+| TC_015 | Empty First Name | 200 OK; empty value accepted |
+| TC_016 | Empty Last Name | 200 OK; empty value accepted |
+
+**Execution Summary:**
+- 8 negative test cases executed.
+- 30 JavaScript assertions passed.
+- Identified potential API validation weaknesses involving missing fields, invalid data types, empty values and booking dates.
+- Used Postman Post-response scripts to validate actual API responses.
